@@ -9,7 +9,7 @@ var b=20;
 
 app.get("/", function(req,res){
  response = {
-      result: req.a + req.b,
+      result: req.query.a + req.query.b,
    };
    res.end(JSON.stringify(response));
   });
