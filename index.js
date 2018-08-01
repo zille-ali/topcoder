@@ -12,5 +12,5 @@ app.get('/calculator/add', function (req, res) {
       result: req.query.param1 + req.query.param2,
    };
    res.end(JSON.stringify(response));
-})
+});
   app.listen(port);
